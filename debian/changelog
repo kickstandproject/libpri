@@ -1,4 +1,4 @@
-libpri (1.4.11.2-1kickstand0+1) UNRELEASED; urgency=low
+libpri (1.4.11.2-1kickstand0+1) lucid; urgency=low
 
   * Initial import.
   * debian/control:
@@ -6,8 +6,9 @@ libpri (1.4.11.2-1kickstand0+1) UNRELEASED; urgency=low
     - Update Maintainer field.
     - Add XSBC-Original-Maintainer field.
     - Drop Uploaders field.
+  * Add git-buildpackage configuration.
 
- -- Paul Belanger <paul.belanger@polybeacon.com>  Thu, 11 Aug 2011 20:08:41 -0400
+ -- Paul Belanger <paul.belanger@polybeacon.com>  Thu, 11 Aug 2011 21:33:02 -0400
 
 libpri (1.4.11.2-1) unstable; urgency=low
 
