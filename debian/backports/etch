@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Etch has an older debhelper:
+sed -i -e '/^Build-Depends:/s/\(debhelper\) ([^)]*),/\1,/' debian/control
+echo 5 >debian/compat
+
+# The version of CDBS
+sed -i -e \
+  '/^include.*debhelper.mk/aDEB_DH_INSTALL_SOURCEDIR=$(CURDIR)/debian/tmp' \
+  debian/rules

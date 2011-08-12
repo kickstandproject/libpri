@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# stolen from cdbs...
+DEB_VERSION := $(shell dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' ')
+DEB_NOEPOCH_VERSION := $(shell echo $(DEB_VERSION) | cut -d: -f2-)
+DEB_UPSTREAM_VERSION := $(shell echo $(DEB_NOEPOCH_VERSION) | sed 's/-[^-]*$$//')
+FILENAME := libpri_$(DEB_UPSTREAM_VERSION).orig.tar.gz
+URL := http://downloads.digium.com/pub/libpri/releases/libpri-$(DEB_UPSTREAM_VERSION).tar.gz
+
+get-orig-source:
+	@@dh_testdir
+	@@[ -d ../tarballs/. ]||mkdir -p ../tarballs
+	@@echo Downloading $(FILENAME) from $(URL) ...
+	@@wget -nv -T10 -t3 -O ../tarballs/$(FILENAME) $(URL)
+
+.PHONY: get-orig-source

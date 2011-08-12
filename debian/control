@@ -1,0 +1,31 @@
+Source: libpri
+Priority: optional
+Section: libs
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Uploaders: Mark Purcell <msp@debian.org>, Tzafrir Cohen <tzafrir@debian.org>, Faidon Liambotis <paravoid@debian.org>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.4
+Homepage: http://www.asterisk.org/
+Vcs-Svn: svn://svn.debian.org/pkg-voip/libpri/trunk/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-voip/libpri/?op=log
+
+Package: libpri-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libpri1.4 (= ${binary:Version})
+Description: Primary Rate ISDN specification development files
+ Development files for the C implementation of the Primary Rate ISDN
+ specification.
+ .
+ It was based on the Bellcore specification SR-NWT-002343 for National
+ ISDN.  As of May 12, 2001, it has been tested work with NI-2, Nortel
+ DMS-100, and Lucent 5E Custom protocols on switches from Nortel and Lucent.
+ 
+Package: libpri1.4
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Primary Rate ISDN specification library
+ C implementation of the Primary Rate ISDN specification.  It was
+ based on the Bellcore specification SR-NWT-002343 for National ISDN.  As of
+ May 12, 2001, it has been tested work with NI-2, Nortel DMS-100, and Lucent
+ 5E Custom protocols on switches from Nortel and Lucent
