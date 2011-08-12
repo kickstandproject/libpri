@@ -1,8 +1,13 @@
 libpri (1.4.11.2-1kickstand0+1) UNRELEASED; urgency=low
 
   * Initial import.
+  * debian/control:
+    - Update Vcs-Git and Vcs-Browser fields for GitHub.
+    - Update Maintainer field.
+    - Add XSBC-Original-Maintainer field.
+    - Drop Uploaders field.
 
- -- Paul Belanger <paul.belanger@polybeacon.com>  Thu, 11 Aug 2011 20:03:16 -0400
+ -- Paul Belanger <paul.belanger@polybeacon.com>  Thu, 11 Aug 2011 20:08:41 -0400
 
 libpri (1.4.11.2-1) unstable; urgency=low
 

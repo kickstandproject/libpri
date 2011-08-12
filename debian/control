@@ -1,13 +1,13 @@
 Source: libpri
 Priority: optional
 Section: libs
-Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
-Uploaders: Mark Purcell <msp@debian.org>, Tzafrir Cohen <tzafrir@debian.org>, Faidon Liambotis <paravoid@debian.org>
+Maintainer: Paul Belanger <pabelanger@kickstand-project.org>
+XSBC-Original-Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.4
 Homepage: http://www.asterisk.org/
-Vcs-Svn: svn://svn.debian.org/pkg-voip/libpri/trunk/
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-voip/libpri/?op=log
+Vcs-Git: git://github.com/kickstandproject/asterisk.git
+Vcs-Browser: https://github.com/kickstandproject/asterisk
 
 Package: libpri-dev
 Section: libdevel
