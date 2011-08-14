@@ -1,13 +1,13 @@
 Source: libpri
 Priority: optional
 Section: libs
-Maintainer: Paul Belanger <pabelanger@kickstand-project.org>
+Maintainer: Paul Belanger <paul.belanger@polybeacon.com>
 XSBC-Original-Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.4
 Homepage: http://www.asterisk.org/
-Vcs-Git: git://github.com/kickstandproject/asterisk.git
-Vcs-Browser: https://github.com/kickstandproject/asterisk
+Vcs-Git: git://github.com/kickstandproject/libpri.git
+Vcs-Browser: https://github.com/kickstandproject/libpri
 
 Package: libpri-dev
 Section: libdevel

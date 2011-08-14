@@ -1,8 +1,10 @@
 libpri (1.4.11.2-1kickstand0+2) UNRELEASED; urgency=low
 
   * QA upload.
+  * debian/control:
+    - Update Vcs-Git and Vcs-Browser fields for libpri.
 
- -- Paul Belanger <paul.belanger@polybeacon.com>  Thu, 11 Aug 2011 21:47:26 -0400
+ -- Paul Belanger <paul.belanger@polybeacon.com>  Sun, 14 Aug 2011 11:18:04 -0400
 
 libpri (1.4.11.2-1kickstand0+1) lucid; urgency=low
 
